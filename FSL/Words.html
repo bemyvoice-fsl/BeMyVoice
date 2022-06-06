@@ -1,0 +1,271 @@
+<html lang="en"> <!--english language-->
+    <head>
+        <meta charset="utf-8">
+        <title>Words | BeMyVoice version 1.0</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="preload" as="script">
+        <meta name="author" content="Baring, Del Rosario, Francisco, Montalvo, Sacristan, Viola">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    </head>
+
+    <body>
+      <main>
+      <nav class="navbar navbar-light navbar-expand">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Logo.png" width="70" height="70" class="d-inline-block align-top" alt="BeMyVoice">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse wrapper" id="navbarsExample02">
+            <ul id="nav" class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Words</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="SL.html">FSL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Translator.html">Translator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+        <div class="yow">
+          <a class="icon" onclick="hide()">
+            <i id="hamburger" class="fa fa-bars"></i></a>
+        <div class="flex-shrink-0 p-3 bg-white" id="lists">
+          <div class="search words">
+              <input class="form-control" type="text" placeholder="Search..." autocomplete="off" aria-label="Search" id="myInput" onkeyup="Search()">
+          </div>
+          <ul id="whole" class="list-unstyled ps-0">
+            <li class="mb-1">
+              <button class="btn btn-toggle rounded collapsed" data-bs-toggle="collapse" data-bs-target="#alphabet-collapse" aria-expanded="true">
+                Sign Language Alphabet
+              </button><a id="count1"></a>
+
+              <!--hamburger menu sidebar
+              tig lilima-->
+              <div class="collapse" id="alphabet-collapse">
+                <ul id="alphabet" class="btn-toggle-nav list-unstyled fw-normal pb-1 small" id="word_list">
+                  <li class="link-dark rounded" onclick="alphabet0()"><a>a</a></li>
+                  <li class="link-dark rounded" onclick="alphabet1()"><a>b</a></li>
+                  <li class="link-dark rounded" onclick="alphabet2()"><a>c</a></li>
+                  <li class="link-dark rounded" onclick="alphabet3()"><a>d</a></li>
+                  <li class="link-dark rounded" onclick="alphabet4()"><a>e</a></li>
+                  <li class="link-dark rounded" onclick="alphabet5()"><a>f</a></li>
+                  <li class="link-dark rounded" onclick="alphabet6()"><a>g</a></li>
+                  <li class="link-dark rounded" onclick="alphabet7()"><a>h</a></li>
+                  <li class="link-dark rounded" onclick="alphabet8()"><a>i</a></li>
+                  <li class="link-dark rounded" onclick="alphabet9()"><a>j</a></li>
+                  <li class="link-dark rounded" onclick="alphabet10()"><a>k</a></li>
+                  <li class="link-dark rounded" onclick="alphabet11()"><a>l</a></li>
+                  <li class="link-dark rounded" onclick="alphabet12()"><a>m</a></li>
+                  <li class="link-dark rounded" onclick="alphabet13()"><a>n</a></li>
+                  <li class="link-dark rounded" onclick="alphabet14()"><a>o</a></li>
+                  <li class="link-dark rounded" onclick="alphabet15()"><a>p</a></li>
+                  <li class="link-dark rounded" onclick="alphabet16()"><a>q</a></li>
+                  <li class="link-dark rounded" onclick="alphabet17()"><a>r</a></li>
+                  <li class="link-dark rounded" onclick="alphabet18()"><a>s</a></li>
+                  <li class="link-dark rounded" onclick="alphabet19()"><a>t</a></li>
+                  <li class="link-dark rounded" onclick="alphabet20()"><a>u</a></li>
+                  <li class="link-dark rounded" onclick="alphabet21()"><a>v</a></li>
+                  <li class="link-dark rounded" onclick="alphabet22()"><a>w</a></li>
+                  <li class="link-dark rounded" onclick="alphabet23()"><a>x</a></li>
+                  <li class="link-dark rounded" onclick="alphabet24()"><a>y</a></li>
+                  <li class="link-dark rounded" onclick="alphabet25()"><a>z</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#greetings-collapse" aria-expanded="false">
+                Common Greetings
+              </button><a id="count2"></a>
+              <div class="collapse" id="greetings-collapse">
+                <ul id="greetings" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li class="link-dark rounded" onclick="greetings1()"><a>Hi/Hello</a></li>
+                  <li class="link-dark rounded" onclick="greetings2()"><a>Good Morning</a></li>
+                  <li class="link-dark rounded" onclick="greetings3()"><a>Good Afternoon</a></li>
+                  <li class="link-dark rounded" onclick="greetings4()"><a>Good Evening</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#introd-collapse" aria-expanded="false">
+                Introduction
+              </button><a id="count3"></a>
+              <div class="collapse" id="introd-collapse">
+                <ul id="introd" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li class="link-dark rounded" onclick="introduction1()"><a>My Name is...</a></li>
+                  <li class="link-dark rounded" onclick="introduction2()"><a>What's your name?</a></li>
+                  <li class="link-dark rounded" onclick="introduction3()"><a>Nice to meet you</a></li>
+                  <li class="link-dark rounded" onclick="introduction4()"><a>How are you?</a></li>
+                  <li class="link-dark rounded" onclick="introduction5()"><a>I am fine</a></li>
+                  <li class="link-dark rounded" onclick="introduction6()"><a>I'm great</a></li>
+                  <li class="link-dark rounded" onclick="introduction7()"><a>What are you doing?</a></li>
+                  <li class="link-dark rounded" onclick="introduction8()"><a>Nothing much</a></li>
+                  <li class="link-dark rounded" onclick="introduction9()"><a>Where did you come from?</a></li>
+                  <li class="link-dark rounded" onclick="introduction10()"><a>I'm from...</a></li>
+                  <li class="link-dark rounded" onclick="introduction11()"><a>Oh, I see</a></li>
+                  <li class="link-dark rounded" onclick="introduction12()"><a>Excuse me</a></li>
+                  <li class="link-dark rounded" onclick="introduction13()"><a>I'm sorry</a></li>
+                  <li class="link-dark rounded" onclick="introduction14()"><a>See you later</a></li>
+                  <li class="link-dark rounded" onclick="introduction15()"><a>See you soon</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#phrases-collapse" aria-expanded="false">
+                Beginner Words/Phrases
+              </button><a id="count4"></a>
+              <div class="collapse" id="phrases-collapse">
+                <ul id="phrases" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li class="link-dark rounded" onclick="phrases1()"><a>I understand</a></li>
+                  <li class="link-dark rounded" onclick="phrases2()"><a>I don't understand</a></li>
+                  <li class="link-dark rounded" onclick="phrases3()"><a>Sorry</a></li>
+                  <li class="link-dark rounded" onclick="phrases4()"><a>It's fine</a></li>
+                  <li class="link-dark rounded" onclick="phrases5()"><a>Okay</a></li>
+                  <li class="link-dark rounded" onclick="phrases6()"><a>Yes</a></li>
+                  <li class="link-dark rounded" onclick="phrases7()"><a>No</a></li>
+                  <li class="link-dark rounded" onclick="phrases8()"><a>Thank you</a></li>
+                  <li class="link-dark rounded" onclick="phrases9()"><a>Welcome</a></li>
+                   <li class="link-dark rounded" onclick="phrases10()"><a>How much?</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#pronouns-collapse" aria-expanded="false">
+                Pronouns
+              </button><a id="count5"></a>
+              <div class="collapse" id="pronouns-collapse">
+                <ul id="pronouns" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li class="link-dark rounded" onclick="pronoun1()"><a>Me/I</a></li>
+                  <li class="link-dark rounded" onclick="pronoun2()"><a>You</a></li>
+                  <li class="link-dark rounded" onclick="pronoun3()"><a>He/She</a></li>
+                  <li class="link-dark rounded" onclick="pronoun4()"><a>Them</a></li>
+                  <li class="link-dark rounded" onclick="pronoun5()"><a>We</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#pospronouns-collapse" aria-expanded="false">
+                Possessive Pronouns
+              </button><a id="count6"></a>
+              <div class="collapse" id="pospronouns-collapse">
+                <ul id="pospronouns" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li class="link-dark rounded" onclick="pospronoun1()"><a>Mine</a></li>
+                  <li class="link-dark rounded" onclick="pospronoun2()"><a>Our</a></li>
+                  <li class="link-dark rounded" onclick="pospronoun3()"><a>Your</a></li>
+                  <li class="link-dark rounded" onclick="pospronoun4()"><a>His/Her</a></li>
+                  <li class="link-dark rounded" onclick="pospronoun5()"><a>Their</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#wh-collapse" aria-expanded="false">
+                Wh's Questions
+              </button><a id="count7"></a>
+              <div class="collapse" id="wh-collapse">
+                <ul id="wh" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li class="link-dark rounded" onclick="wh1()"><a>What</a></li>
+                  <li class="link-dark rounded" onclick="wh2()"><a>When</a></li>
+                  <li class="link-dark rounded" onclick="wh3()"><a>Who</a></li>
+                  <li class="link-dark rounded" onclick="wh4()"><a>Why</a></li>
+                  <li class="link-dark rounded" onclick="wh5()"><a>Where</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <!--
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#numbers-collapse" aria-expanded="false">
+                Numbers
+              </button>
+              <div class="collapse" id="numbers-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li class="link-dark rounded" onclick="num1()"><a>1 to 10</a></li>
+                  <li class="link-dark rounded" onclick="num2()"><a>100 to 1000</a></li>
+                  <li class="link-dark rounded" onclick="num3()"><a>1000 to 10k</a></li>
+                  <li class="link-dark rounded" onclick="num4()"><a>Million</a></li>
+                  <li class="link-dark rounded" onclick="num5()"><a>Billion</a></li>
+                  <li class="link-dark rounded" onclick="num6()"><a>Trillion</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#ordnumbers-collapse" aria-expanded="false">
+                Ordinal Numbers
+              </button>
+              <div class="collapse" id="ordnumbers-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li class="link-dark rounded" onclick="ord1()"><a>1st to 10th</a></li>
+                </ul>
+              </div>
+            </li> -->
+
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#colors-collapse" aria-expanded="false">
+                Colors
+              </button><a id="count8"></a>
+              <div class="collapse" id="colors-collapse">
+                <ul id="colors" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li class="link-dark rounded" onclick="color1()"><a>Black</a></li>
+                  <li class="link-dark rounded" onclick="color2()"><a>Brown</a></li>
+                  <li class="link-dark rounded" onclick="color3()"><a>Blue</a></li>
+                  <li class="link-dark rounded" onclick="color4()"><a>Gold</a></li>
+                  <li class="link-dark rounded" onclick="color5()"><a>Green</a></li>
+                  <li class="link-dark rounded" onclick="color6()"><a>Gray</a></li>
+                  <li class="link-dark rounded" onclick="color7()"><a>Orange</a></li>
+                  <li class="link-dark rounded" onclick="color8()"><a>Pink</a></li>
+                  <li class="link-dark rounded" onclick="color9()"><a>Violet/Purple</a></li>
+                  <li class="link-dark rounded" onclick="color10()"><a>Red</a></li>
+                  <li class="link-dark rounded" onclick="color11()"><a>Silver</a></li>
+                  <li class="link-dark rounded" onclick="color12()"><a>White</a></li>
+                  <li class="link-dark rounded" onclick="color13()"><a>Yellow</a></li>
+                  <li class="link-dark rounded" onclick="color14()"><a>Light</a></li>
+                  <li class="link-dark rounded" onclick="color15()"><a>Dark</a></li>
+                  <li class="link-dark rounded" onclick="color16()"><a>Rainbow</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="row align-items-md-stretch">
+        <div class="contentz col-md-6">
+          <h3 id="word_text">Word</h3>
+          <h5 id="translation">Filipino translation</h5>
+          <p id="definition">The definition goes here</p>
+          <br>
+          <h5>SL Translation</h5>
+          <p id="fsl">The finger spelling goes here.</p>
+      </div>
+      <div class="contentz col-md-6">
+        <h6>How to Execute in Filipino Sign Language</h6>
+        <div class="signsign">
+          <video controls loop autoplay muted id="video" style="width:100%;">
+          Your browser does not support the video tag.
+        </video>
+        </div>
+      </div>
+      </div>
+    </div>
+    </main>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="java.js"></script>
+    </body>
+</html>

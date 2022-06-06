@@ -1,0 +1,150 @@
+body {
+    background-image: url("lina-volkmann-KHz5tDDKCXA-unsplash.jpg");
+    background-size: cover;
+    background-color: #cccccc;
+  }
+
+  .contents{
+    margin-top: 0;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: fit-content;
+text-align: center;
+margin:20px;
+      }
+
+  .contentz{
+    margin-top: 0;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width:50%;
+    height: 500px;
+    float: left;
+      }
+  
+  .nav{
+    background-color: transparent; 
+  }
+
+ul{
+    list-style-type:none;
+}
+
+.yow{
+  margin-left:25px;
+  margin-right:25px;
+  align-items: center;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, .85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav li {
+  display: block;
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+  text-decoration: none;
+}
+
+#lists{
+  height: auto;
+  float:left;
+  overflow:scroll;
+  max-width: fit-content;
+  height: 500px;
+  transition: 0.5s;
+}
+
+#fsl{
+  font-family: 'Sign Language';
+  font-size: 4em;
+}
+
+li:hover{
+  cursor:pointer;
+  color: #483D8B;
+}
+
+@font-face {
+  font-family: 'Sign Language'; src: url('GallaudetRegular.ttf');
+}
+
+#sl{
+  width:50%;
+}
+
+
+#hamburger{
+  float:left;
+  padding:5px;
+  background-color: white;
+  color:rgb(37, 37, 37);
+}
+
+#hamburger:hover{
+  background-color: rgba(221, 221, 221);
+}
+
+/*item count*/
+#count1, #count2, #count3, #count4, #count5, #count6, #count7, #count8{
+  color:rgb(107, 107, 107);
+  font-size: small;
+}
+
+/*translator*/
+#transl, #typearea{
+  width: 50%;
+  float:left;
+  padding: 20px;
+  height: 300px;
+  resize: none;
+  overflow:scroll;
+  margin-top: 10px;
+}
+
+#transl{
+  border: 1px rgba(37, 37, 37);
+  background-color: rgba(204, 204, 204, 0.5);
+  font-family: 'Sign Language';
+  font-size: 4rem;
+}
+
+
+@media screen and (max-width: 800px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+  .contentz{
+    width:100%;
+    height: fit-content;
+  }
+
+  #transl, #typearea{
+    float:none;
+    width:100%;
+    height:250px;
+    overflow: scroll;
+
+  }
+}
